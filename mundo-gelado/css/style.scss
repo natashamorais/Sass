@@ -43,14 +43,16 @@ a {
 .container {
   width: 960px;
   margin: 0 auto;
-}
 
-@media (max-width: 960px) {
-  .container {
-    width: 100%;
-    padding: 0 4%;
+  @media (max-width: 960px) {
+  
+      width: 100%;
+      padding: 0 4%;
+  
   }
 }
+
+
 
 .transition {
   transition: all 1s;
@@ -83,21 +85,23 @@ a {
   &__mobile {
     display: none;
   }
+
+  @media (max-width: 420px) {
+    
+      background-color: $cor-branca ;
+  
+  
+    &__link {
+        display: none;
+      }
+  
+    &__mobile {
+      display: block;
+    }
+  }
 }
    
-@media (max-width: 420px) {
-  .nav {
-    background-color: $cor-branca ;
-  }
 
-.nav__link {
-    display: none;
-  }
-
-  .nav__mobile {
-    display: block;
-  }
-}
 
 .banner {
   background: url("../images/foto-banner.jpg");
@@ -130,32 +134,33 @@ a {
     display: inline-block;
     margin-top: 40px;
   }
+  @media (max-width: 420px) {
+    
+      height: 400px;
+      background-position: -360px 0;
+    }
+  
+    @media (max-width: 1024px) {
+      &__title {
+        font-size: 80px;
+      }
+    }
+    
+    @media (max-width: 850px) {
+      &__title {
+        font-size: 60px;
+      }
+    }
+    
+    @media (max-width: 850px) {
+      &__subtitle {
+        font-size: 18px;
+      }
+    }
 }
 
-@media (max-width: 420px) {
-  .banner {
-    height: 400px;
-    background-position: -360px 0;
-  }
-}
 
-@media (max-width: 1024px) {
-  .banner__title {
-    font-size: 80px;
-  }
-}
 
-@media (max-width: 850px) {
-  .banner__title {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 850px) {
-  .banner__subtitle {
-    font-size: 18px;
-  }
-}
 
 .btn {
   color: $cor-branca ;
@@ -266,78 +271,80 @@ a {
     }
   }
  
+  @media (max-width: 960px) {
+    &__border {
+        display: none;
+      }
+
+  
+      &--siberia {
+        display: block;
+        text-align: center;
+      }
+
+    
+      &--siberia__img {
+        max-width: 100%;
+      }
+  
+    
+      &--groenlandia,
+      &--antartida {
+        display: block;
+        height: auto;
+        &__img {
+          max-height: 100%;
+        }
+      }
+    
+      &--groenlandia {
+         margin-bottom: 40px;
+        }
+    
+      
+        
+      
+      
+      
+        &__description {
+          width: 100%;
+          text-align: center;
+          padding: 40px;
+        }
+      
+      
+      
+        &__title {
+          margin-top: 0;
+        }
+      
+      
+        &_paragraph--groenlandia {
+          max-width: 100%;
+        }
+      
+      
+    
+        &--groenlandia__wrapper-img,
+        &--antartida__wrapper-img {
+          width: 100%;
+        }
+      
+      
+       
+        &__description--antartida {
+          text-align: center;
+        }
+      
+    }
+  }
+}
 }
 
-@media (max-width: 960px) {
-  .destination__border {
-    display: none;
-  }
-}
 
-@media (max-width: 960px) {
-  .destination--siberia {
-    display: block;
-    text-align: center;
-  }
-}
 
-@media (max-width: 960px) {
-  .destination--siberia__img {
-    max-width: 100%;
-  }
-}
 
-@media (max-width: 960px) {
-  .destination--groenlandia,
-  .destination--antartida {
-    display: block;
-    height: auto;
-  }
 
-  .destination--groenlandia {
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination--groenlandia__img,
-  .destination--antartida__img {
-    max-height: 100%;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination__description {
-    width: 100%;
-    text-align: center;
-    padding: 40px;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination__title {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination_paragraph--groenlandia {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 960px) {
-  .destination--groenlandia__wrapper-img,
-  .destination--antartida__wrapper-img {
-    width: 100%;
-  }
-}
-@media (max-width: 960px) {
- 
-  .destination__description--antartida {
-    text-align: center;
-  }
-}
 
 .footer {
   background-color: #161616;
