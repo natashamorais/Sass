@@ -1,0 +1,42 @@
+/* ------------------------------------------HELPERS-------------------------------------------------------------------*/
+
+/* --- VARIAVEIS --- */
+@import '_helpers/_variaveis';
+
+/* --- MIXIN --- */
+@import '_helpers/_mixins';
+/*------------------------------------------BASE------------------------------------------------------------------------*/
+
+/* --- BASE ---*/
+@import '_base/_base';
+
+/*--------------------------------------------COMPONENTS----------------------------------------------------------------*/
+
+/* --- BOTAO --- */
+@import '_components/_btn';
+
+/* -CTA--- */
+@import '_components/_secao-cta';
+
+/*----------------------------------------------LAYOUT-----------------------------------------------------------------*/
+
+/* --- NAV --- */
+@import '_layout/_nav';
+
+/* --- HEADER --- */
+@import '_layout/_header';
+
+/* --- PRINCIPAL ----*/
+@import '_layout/_principal';
+
+/* --- SECTION MARAVILHOSAS --- */
+@import '_layout/_maravilhosas';
+
+/* --- RODAPE --- */
+@import '_layout/_rodape';
+
+/* --- PEFIL DIVA--- */
+@import '_layout/_diva';
+
+/* --- AUTORA --- */
+@import '_layout/_autora';

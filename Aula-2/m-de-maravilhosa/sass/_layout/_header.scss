@@ -1,0 +1,25 @@
+.header {
+  min-height: 80vh;
+  height: 500px;
+  background: linear-gradient(rgba(255, 0, 255, 0.2),
+                              rgba(255, 0, 255, 0.2)),
+              url(../img/turma6.jpeg);
+  background-size: cover;
+  background-position: center 14%;
+  background-repeat: no-repeat;
+  @include flexbox($align-items: flex-end);
+  text-align: center;
+  padding: 11rem 2rem 5rem 2rem;
+  color: white;
+  @media (min-width: 768px){
+      
+      min-height: 75vh;
+      text-align: left;
+      padding: 5rem 10rem;
+      
+  }
+
+  @media (min-width: 1440px){
+      min-height: 90vh;
+  }
+}
